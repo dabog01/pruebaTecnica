@@ -1,4 +1,5 @@
 def getBrakeConfiguration(category, terrainCondition):
+    
     brakeConfiguration = {
         'DD2': {
             'dry': {'front': 0, 'rear': 100},
