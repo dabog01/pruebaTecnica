@@ -54,3 +54,12 @@ class Split:
         self.splitStart = splitStart
         self.splitEnd = splitEnd
         self.lapId = lapId
+
+class RaceElementFactory:
+    @staticmethod
+    def createLap(lapStart, lapEnd):
+        return Lap(lapStart, lapEnd)
+
+    @staticmethod
+    def createSplit(splitStart, splitEnd, lapId):
+        return Split(splitStart, splitEnd, lapId)
